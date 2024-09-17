@@ -1,14 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  server: {
+    port: 3000,
+    host: "0.0.0.0",
+  },
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ["@nuxtjs/tailwindcss"],
   runtimeConfig: {
     // Make environment variables accessible here
     public: {
-      STUDENT_NAME: process.env.STUDENT_NAME,
-      STUDENT_NIM: process.env.STUDENT_NIM,
+      STUDENT_NAME: process.env.STUDENT_NAME || "Vincent Marlino",
+      STUDENT_NIM: process.env.STUDENT_NIM || "00000072738",
       // Add more environment variables as needed
     },
   },
-})
+});
