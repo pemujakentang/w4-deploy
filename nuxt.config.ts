@@ -10,8 +10,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Make environment variables accessible here
     public: {
-      STUDENT_NAME: process.env.STUDENT_NAME || "Vincent Marlino",
-      STUDENT_NIM: process.env.STUDENT_NIM || "00000072738",
+      STUDENT_NAME: process.env.STUDENT_NAME || "Bonifasius Martin",
+      STUDENT_NIM: process.env.STUDENT_NIM || "00000068324",
       // Add more environment variables as needed
     },
   },
