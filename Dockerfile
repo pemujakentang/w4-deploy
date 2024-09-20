@@ -15,6 +15,10 @@ WORKDIR /usr/src/app
 
 COPY package.json pnpm-lock.yaml ./
 
+RUN npm install
+
+RUN npm run build
+
 RUN npm install -g pnpm && pnpm install
 
 COPY . .
