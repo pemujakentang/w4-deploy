@@ -25,6 +25,6 @@ COPY . .
 
 RUN pnpm run build
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["pnpm", "start"]
